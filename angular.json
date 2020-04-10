@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SubscriptionDispatcherApp"
+    }
+  },
+  "defaultProject": "SubscriptionDispatcherApp",
+  "cli": {
+    "analytics": "79e05d35-de2a-42e8-b75e-988f7d74a68b"
+  }
 }

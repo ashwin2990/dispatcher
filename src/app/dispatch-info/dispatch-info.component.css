@@ -1,0 +1,15 @@
+#navbarSupportedContent{
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-bottom: 1vw;
+}
+
+.navbar-custom{
+	background-color: #C3E4F8;
+	color: #222160;
+}
+
+.navbar-brand img{
+	width: 1vw;
+	height: 4vh;
+}

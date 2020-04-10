@@ -1,0 +1,188 @@
+#navbarSupportedContent{
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-bottom: 1vw;
+}
+
+.navbar-custom{
+	background-color: #C3E4F8;
+	color: #222160;
+}
+
+.navbar-brand img{
+	width: 1vw;
+	height: 4vh;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+#page-text{
+	margin-left: 4vw;
+	margin-top: 8vh;
+	color: #222160;
+	font-size: 3vh;
+	text-decoration: underline;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*Home Page*/
+.box{
+	height: 80vh;
+	margin: 2vh 2vw 0.2vh 2vw;
+}
+
+.inner-box{
+	background-color: #C3E4F8;
+	width: 100%;
+	height: 60%;
+	padding-top: 10vh;
+	border-radius: 15px;
+	box-shadow: 5px 5px rgba(204,204,204,0.4);
+}
+
+.box-text{
+	color: #222160;
+	text-align: center;
+	font-size: 3vh;
+	margin-top: 1vh;
+}
+
+.btn-div {
+	margin-left: 2vw;
+	margin-top: 4vh; 
+}
+
+.btn{
+	/*height: 30%;
+	width: 30%;*/
+	background-color: #C3E4F8;
+	border: 2px solid #222160;
+	border-radius: 2px;
+}
+
+.img{
+	position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    height: 35%;
+}
+
+.w60{
+	width: 60%
+}
+
+.w45{
+	width: 45%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.img-btn{
+	width: 3vw;
+	height: 3vw;
+	padding: 5px;
+	border: 2px solid #222160;
+	border-radius: 10px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*Meds Page*/
+
+#med-text{
+	margin-left: 23vw;
+	margin-top: 8vh;
+	color: #222160;
+	font-size: 5vh;
+}
+
+.med-form{
+	position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50vw;
+}
+
+/* Create two equal columns that floats next to each other */
+.row {
+  /*float: left;*/
+  width: 25vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50vh;
+  background-color: #C3E4F8;
+	color: #222160;
+  border-radius: 0 20px 20px 0;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+	box-shadow: 5px 5px #CCCCCC;
+}
+
+.left{
+	background-color: #2794B1;
+	color: #C3E4F8;
+	border-radius: 20px 0 0 20px;
+	padding-top: 6vh;
+	box-shadow: 5px 5px #CCCCCC;
+}
+
+.left p{
+	color: #F1C48A;
+	display:block; 
+	text-align:right;
+	font-size: 3vh;
+}
+
+.right{
+	background-color: #C3E4F8;
+	color: #222160;
+	border-radius: 0 20px 20px 0;
+	padding-top: 12vh;
+	box-shadow: 5px 5px #CCCCCC;
+}
+
+.left label{
+	display:block; 
+	text-align:right;
+}
+
+.right select{
+	border:0px;
+	width: 80%;
+	border-bottom: 2px solid #222160; 
+    background:none;
+    -webkit-appearance:none;
+    appearance:none;
+    margin-bottom: 1vh;
+}
+
+.right input[type="submit"]{
+	margin:2vh 50%;
+	position:relative;
+	left:-50px;
+	background-color: #2794B1;
+	color: #F1C48A;
+	border-color: #2794B1;
+	border-radius: 10px;
+	width: 7vw;
+	height: 7vh;
+}
+
+.w-med{
+	width: 5vw;
+	height: 8vh;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*Lab Tests Page*/
+.right input[type="date"]{
+	border:0px;
+	width: 80%;
+	border-bottom: 2px solid #222160; 
+    background:none;
+    -webkit-appearance:none;
+    appearance:none;
+    margin-bottom: 1vh;
+}

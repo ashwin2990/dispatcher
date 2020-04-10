@@ -1,0 +1,100 @@
+<!--<p>
+    <button class="waves-effect waves-light btn" [routerLink]="['medicines']">Cardio Vascular</button> <br><br>
+    <button class="waves-effect waves-light btn" [routerLink]="['medicines']">Diabetes</button> <br><br>
+    <button class="waves-effect waves-light btn" [routerLink]="['medicines']">Kidneys</button> <br><br>
+    <button class="waves-effect waves-light btn" [routerLink]="['medicines']">Thyroid</button> <br><br>
+    <button class="waves-effect waves-light btn" (click)="onClick()">Lungs/COPD</button> <br><br>
+</p>!-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dispatcher - Home</title>
+	<link rel="stylesheet" type="text/css" href="ailments.component.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<script src="https://kit.fontawesome.com/d3a752d6d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-custom">
+	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    		<ul class="navbar-nav mr-auto">
+	      			<a class="navbar-brand navbar-custom" href="#"><img src="../../assets/Logo Dis.png">  Dispatcher</a>
+	  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    				<span class="navbar-toggler-icon"></span>
+	  				</button>
+	    		</ul>
+
+	    		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        			<ul class="navbar-nav ml-auto">
+            			<li class="nav-item">
+                			<a class="nav-link" href="#"><i class="fas fa-cart-plus navbar-custom"></i><span class="sr-only">(current)</span></a>
+            			</li>
+            			<li class="nav-item">
+                			<a class="nav-link navbar-custom" href="#">My Subscriptions<span class="sr-only">(current)</span></a>
+            			</li>
+       				</ul>
+    			</div>
+	  		</div>
+	</nav>
+	<p id="page-text">Select Ailment</p>
+	<div class="container-fluid">
+  		<div class="row">
+    		<div class="col-sm box box-left">
+      			<div class="inner-box">
+      				<img class="img w60" src="../../assets/heart.png">
+      				<p class="box-text">Cardio Vascular</p>
+      				<div class="btn-div">
+	      				<button class="btn" [routerLink]="['medicines']"><img class="img-btn"  src="../../assets/capsule.png"></button>
+	      				<button class="btn"><img class="img-btn"  src="../../assets/test-tube.png"></button>
+      				</div>
+      			</div>
+		    </div>
+		    <div class="col-sm box box-left">
+      			<div class="inner-box">
+      				<img class="img w45" src="../../assets/Thyroid.png">
+      				<p class="box-text">Thyroid</p>
+      				<div class="btn-div">
+	      				<button class="btn" [routerLink]="['medicines']"><img class="img-btn"  src="../../assets/capsule.png"></button>
+	      				<button class="btn"><img class="img-btn"  src="../../assets/test-tube.png"></button>
+      				</div>
+      			</div>
+		    </div>
+		    <div class="col-sm box box-left">
+      			<div class="inner-box">
+      				<img class="img w45" src="../../assets/Diabetes.png">
+      				<p class="box-text">Diabetes</p>
+      				<div class="btn-div">
+	      				<button class="btn" [routerLink]="['medicines']"><img class="img-btn"  src="../../assets/capsule.png"></button>
+	      				<button class="btn"><img class="img-btn"  src="../../assets/test-tube.png"></button>
+      				</div>
+      			</div>
+		    </div>
+		    <div class="col-sm box box-left">
+      			<div class="inner-box">
+      				<img class="img w45" src="../../assets/Pulmonary.png">
+      				<p class="box-text">Pulmonary</p>
+      				<div class="btn-div">
+	      				<button class="btn" [routerLink]="['medicines']"><img class="img-btn"  src="../../assets/capsule.png"></button>
+	      				<button class="btn"><img class="img-btn"  src="../../assets/test-tube.png"></button>
+      				</div>
+      			</div>
+		    </div>
+		    <div class="col-sm box box-left">
+      			<div class="inner-box">
+      				<img class="img w50" src="../../assets/Renal.png">
+      				<p class="box-text">Renal</p>
+      				<div class="btn-div">
+	      				<button class="btn" [routerLink]="['medicines']"><img class="img-btn"  src="../../assets/capsule.png"></button>
+	      				<button class="btn"><img class="img-btn"  src="../../assets/test-tube.png"></button>
+      				</div>
+      			</div>
+		    </div>
+  		</div>
+	</div>
+
+
+
+</body>
+</html>

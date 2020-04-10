@@ -1,0 +1,94 @@
+
+<!--<form [formGroup]="this.medicinesService.form" (ngSubmit)="onSubmit()">
+
+    <input placeholder="Vendor" formControlName="vendorName" type="text" class="input-field col s12">
+    <input placeholder="Daily Dosage" formControlName="dailyDosage" type="text" class="input-field col s12">
+    <input placeholder="Number of Days" formControlName="numDays" type="text" class="input-field col s12">
+    <button class="waves-effect waves-light btn col s4" *ngFor="let medicine of medicines" (click)="addMedicine(medicine)">
+            {{ medicine }}
+     </button>
+
+<button class="waves-effect waves-light btn" (click)="onSubmit()">Submit</button>
+    
+
+        
+</form>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dispatcher - Meds</title>
+	<link rel="stylesheet" type="text/css" href="medicines.component.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<script src="https://kit.fontawesome.com/d3a752d6d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-custom">
+	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    		<ul class="navbar-nav mr-auto">
+	      			<a class="navbar-brand navbar-custom" href="#"><img src="../../assets/Logo Dis.png">  Dispatcher</a>
+	  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    				<span class="navbar-toggler-icon"></span>
+	  				</button>
+	    		</ul>
+
+	    		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        			<ul class="navbar-nav ml-auto">
+            			<li class="nav-item">
+                			<a class="nav-link" href="#"><i class="fas fa-cart-plus navbar-custom"></i><span class="sr-only">(current)</span></a>
+            			</li>
+            			<li class="nav-item">
+                			<a class="nav-link navbar-custom" href="#">My Subscriptions<span class="sr-only">(current)</span></a>
+            			</li>
+       				</ul>
+    			</div>
+	  		</div>
+	</nav>
+    <p id="med-text"><img class="w-med" src="../../assets/heart.png">Medicines</p>
+    
+    <form [formGroup]="this.medicinesService.form" class="med-form">
+
+            <div class="row">
+    
+
+                    <select formControlName="vendorName" class="form-control" name="Vendor" id="Vendor">
+                        <option value="" hidden="">Choose Pharmacy</option>
+                        <option value="Pride Medico">Pride Medico</option>
+                        <option value="Sai Medicals">Sai Medicals</option>
+                    </select><br>
+                    <select formControlName="medicineOrder" class="form-control" name="Med" id="Medicine">
+                        <option value="" hidden="">Choose Medicine</option>
+                        <option value="Lisotec">Lisotec</option>
+                        <option value="Amlogard">Amlogard</option>
+                        <option value="Repace">Repace</option>
+                        <option value="Biduret">Biduret</option>
+                        <option value="Betaone">Betaone</option>
+                    </select><br>
+                    <select class="form-control" name="Power" id="power">
+                        <option value="" hidden="">Select Power</option>
+                        <option value="0.5">0.5</option>
+                        <option value="1.0">1.0</option>
+                    </select><br>
+                    <select formControlName="dailyDosage" class="form-control" name="Dosage" id="dosage">
+                        <option value="" hidden="">Select Dosage</option>
+                        <option value="1">Once</option>
+                        <option value="2">Twice</option>
+                    </select><br>
+                    <select formControlName="numDays" class="form-control" name="Del-time" id="Delivery">
+                        <option value="" hidden="">Select Subscription Type</option>
+                        <option value="7">Weekly</option>
+                        <option value="14">Bi-Weekly</option>
+                        <option value="30">Monthly</option>
+                    </select><br>
+    
+                    <button (click)="onSubmit()">Subscribe</button>
+                    <!--<input type="submit" value="Subscribe" (click)="onSubmit()">-->
+    
+            </div>
+        </form>
+
+
+</body>
+</html>
